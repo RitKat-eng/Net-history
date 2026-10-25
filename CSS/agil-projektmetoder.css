@@ -1,0 +1,1121 @@
+
+/* GLOBAL STYLES */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  color: #142d47;
+  background-color: #ffffff;
+}
+
+img {
+  max-width: 100%;
+}
+
+
+/*SECTION 1: PAGE HERO */
+
+.agile-hero {
+  width: 100%;
+  padding: 64px 24px;
+  background-color: #ffffff;
+  color: #142d47;
+  
+}
+
+/* Breadcrumb */
+
+.agile-breadcrumb {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-bottom: 26px;
+  color: #000000;
+  font-size: 16px;
+  font-family: Arial,  sans-serif;
+}
+
+.agile-breadcrumb a {
+  color: #000000;
+  text-decoration: none;
+  text-decoration: underline;
+}
+
+
+/* Blue label */
+
+.agile-label {
+  margin: 0 0 22px;
+  color: #0057ff;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Main title */
+
+.agile-hero h1 {
+  margin: 0 0 16px;
+  font-size: 48px;
+  font-weight: 400;
+  line-height: 1.15;
+  letter-spacing: -1px;
+}
+
+/* Description and reading time */
+
+.agile-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 32px;
+}
+
+.agile-intro p {
+  flex: 1;
+  max-width: 820px;
+  margin: 0;
+  color: #38536f;
+  font-size: 18px;
+  line-height: 1.65;
+}
+
+.agile-reading-time {
+  flex-shrink: 0;
+  align-self: flex-end;
+  padding-bottom: 2px;
+  color: #607894;
+  font-size: 14px;
+  white-space: nowrap;
+}
+
+
+/* SECTION 2: PLANERA*/
+
+.planera {
+  padding: 64px 24px;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 60px;
+  align-items: center;
+  width: 100%;
+  padding: 40px 2.3%;
+  background-color: #ffffff;
+  color: #142d47;
+}
+
+/* Left card */
+
+.card1 {
+  min-width: 0;
+}
+
+.card1 h3 {
+  margin: 0 0 24px;
+  color: #2160ff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.card1 h2 {
+  margin: 0 0 32px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card1 p {
+  margin: 0 0 32px;
+  color: #38536f;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+.card1 p:last-child {
+  margin-bottom: 0;
+}
+
+/* Right dark card */
+
+.card2 {
+  min-width: 0;
+  padding: 48px 40px;
+  border-radius: 8px;
+  background-color: #112d47;
+  color: #ffffff;
+}
+
+.card2 img {
+  display: block;
+  width: 44px;
+  height: 44px;
+  margin-bottom: 32px;
+  object-fit: contain;
+}
+
+.card2 h2 {
+  margin: 0 0 40px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.card2 p {
+  margin: 0;
+  color: #b9c9da;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.7;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+
+  /* Hero */
+
+  .agile-hero {
+    padding: 28px 5% 40px;
+  }
+
+  .agile-hero h1 {
+    font-size: 40px;
+  }
+
+  .agile-intro {
+    gap: 24px;
+  }
+
+  .agile-intro p {
+    font-size: 16px;
+  }
+
+  /* Planera section */
+
+  .planera {
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+    padding: 36px 5%;
+  }
+
+  .card1 h2 {
+    font-size: 28px;
+  }
+
+  .card1 p {
+    font-size: 17px;
+  }
+
+  .card2 {
+    padding: 32px 28px;
+  }
+
+  .card2 h2 {
+    font-size: 32px;
+    margin-bottom: 28px;
+  }
+
+  .card2 p {
+    font-size: 16px;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    padding: 32px 5%;
+  }
+
+  .footer-container h2 {
+    font-size: 28px;
+  }
+
+  .footer-container p,
+  .footer-links a {
+    font-size: 16px;
+  }
+}
+
+
+/* Mobile */
+
+@media (max-width: 600px) {
+
+  /* Hero */
+
+  .agile-hero {
+    padding: 24px 20px 36px;
+  }
+
+  .agile-breadcrumb {
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+    font-size: 12px;
+  }
+
+  .agile-label {
+    margin-bottom: 18px;
+    font-size: 11px;
+  }
+
+  .agile-hero h1 {
+    margin-bottom: 18px;
+    font-size: 36px;
+    line-height: 1.2;
+    letter-spacing: -0.5px;
+  }
+
+  .agile-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+
+  .agile-intro p {
+    max-width: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+  }
+
+  .agile-reading-time {
+    align-self: flex-start;
+    font-size: 13px;
+  }
+
+  /* Planera section */
+
+  .planera {
+    grid-template-columns: 1fr;
+    gap: 32px;
+    padding: 32px 20px;
+  }
+
+  .card1 h3 {
+    margin-bottom: 18px;
+    font-size: 13px;
+  }
+
+  .card1 h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .card1 p {
+    margin-bottom: 24px;
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  .card2 {
+    padding: 28px 24px;
+  }
+
+  .card2 img {
+    width: 36px;
+    height: 36px;
+    margin-bottom: 24px;
+  }
+
+  .card2 h2 {
+    margin-bottom: 32px;
+    font-size: 24px;
+    line-height: 1.25;
+  }
+
+  .card2 p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+
+  /* Footer */
+
+  .footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 28px;
+    padding: 28px 20px;
+  }
+
+  .footer-container h2 {
+    font-size: 32px;
+  }
+
+  .footer-container p,
+  .footer-links a {
+    font-size: 15px;
+  }
+
+  .footer-links {
+    gap: 16px;
+  }
+}
+
+/* Sprint section */
+.sprint-fungerar {
+  width: 100%;
+  padding: 64px 24px;
+  background-color: #f0f5fc;
+  color: #142d47;
+  font-family: Arial, sans-serif;
+}
+
+/* Section heading */
+.sprint-hero {
+  margin-bottom: 52px;
+}
+
+.sprint-hero h3 {
+  margin: 0 0 22px;
+  color: #2160ff;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.sprint-hero h2 {
+  margin: 0 0 24px;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.sprint-hero p {
+  margin: 0;
+  color: #38536f;
+  font-size: 22px;
+  line-height: 1.6;
+}
+
+/* Four-card grid */
+.sprint-cards {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 28px;
+}
+
+.cards {
+  min-width: 0;
+  padding: 36px 30px;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+/* Number and arrow */
+.card-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+
+.card-top span {
+  color: #2160ff;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 1;
+}
+
+.card-top img {
+  display: block;
+  width: 26px;
+  height: 26px;
+  object-fit: contain;
+}
+
+/* Card title */
+.cards h3 {
+  margin: 0 0 26px;
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Card description */
+.cards p {
+  margin: 0;
+  color: #38536f;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .sprint-fungerar {
+    padding: 40px 3%;
+  }
+
+  .sprint-hero h2 {
+    font-size: 28px;
+  }
+
+  .sprint-hero p {
+    font-size: 18px;
+  }
+
+  .sprint-cards {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 22px;
+  }
+
+  .cards {
+    padding: 28px 24px;
+  }
+
+  .cards h3 {
+    font-size: 24px;
+  }
+
+  .cards p {
+    font-size: 16px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sprint-fungerar {
+    padding: 32px 20px;
+  }
+
+  .sprint-hero {
+    margin-bottom: 32px;
+  }
+
+  .sprint-hero h3 {
+    font-size: 12px;
+    margin-bottom: 16px;
+  }
+
+  .sprint-hero h2 {
+    font-size: 32px;
+    margin-bottom: 18px;
+  }
+
+  .sprint-hero p {
+    font-size: 16px;
+  }
+
+  .sprint-cards {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .cards {
+    padding: 26px 24px;
+  }
+
+  .card-top {
+    margin-bottom: 24px;
+  }
+
+  .card-top span {
+    font-size: 32px;
+  }
+
+  .cards h3 {
+    margin-bottom: 16px;
+    font-size: 22px;
+  }
+
+  .cards p {
+    font-size: 16px;
+  }
+}
+
+/* Sprint example section */
+.sprint-example {
+  width: 100%;
+  padding: 64px 24px;
+  background-color: #ffffff;
+  color: #142d47;
+  font-family: Arial, sans-serif;
+}
+
+/* Small blue label */
+.sprint-example-label {
+  margin: 0 0 22px;
+  color: #2160ff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* Main title */
+.sprint-example > h2 {
+  margin: 0 0 14px;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Sprint goal and badge */
+.sprint-example-intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 24px;
+  margin-bottom: 42px;
+}
+
+.sprint-example-intro p {
+  margin: 0;
+  color: #38536f;
+  font-size: 24px;
+  line-height: 1.5;
+}
+
+.sprint-badge {
+  flex-shrink: 0;
+  padding: 15px 24px;
+  border-radius: 30px;
+  background-color: #e7efff;
+  color: #2160ff;
+  font-size: 18px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+/* Quote box */
+.sprint-quote {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  padding: 28px 30px;
+  border: 1px solid #dce5f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.sprint-quote img {
+  display: block;
+  flex-shrink: 0;
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.sprint-quote p {
+  margin: 0;
+  color: #38536f;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+
+/* Tablet */
+@media (max-width: 900px) {
+  .sprint-example {
+    padding: 40px 3%;
+  }
+
+  .sprint-example > h2 {
+    font-size: 28px;
+  }
+
+  .sprint-example-intro p {
+    font-size: 20px;
+  }
+
+  .sprint-badge {
+    font-size: 14px;
+    padding: 12px 18px;
+  }
+
+  .sprint-quote p {
+    font-size: 19px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sprint-example {
+    padding: 32px 20px;
+  }
+
+  .sprint-example-label {
+    font-size: 12px;
+    margin-bottom: 18px;
+  }
+
+  .sprint-example > h2 {
+    font-size: 24px;
+  }
+
+  .sprint-example-intro {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    margin-bottom: 28px;
+  }
+
+  .sprint-example-intro p {
+    font-size: 17px;
+  }
+
+  .sprint-badge {
+    font-size: 12px;
+    padding: 11px 16px;
+  }
+
+  .sprint-quote {
+    align-items: flex-start;
+    gap: 16px;
+    padding: 20px 16px;
+  }
+
+  .sprint-quote img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .sprint-quote p {
+    font-size: 16px;
+  }
+}
+
+/* Sprint board */
+.sprint-board {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+  width: 100%;
+  padding: 32px 0;
+  font-family: Arial, sans-serif;
+  color: #142d47;
+}
+
+/* Each column */
+.board-column {
+  min-width: 0;
+  padding: 30px;
+  border-radius: 8px;
+  background-color: #f0f5fc;
+}
+
+/* Column heading */
+.board-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.board-heading h2 {
+  margin: 0;
+  font-size: 32px;
+  font-weight: 400;
+}
+
+.task-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background-color: #ffffff;
+  color: #71869f;
+  font-size: 14px;
+}
+
+/* Task cards */
+.task-card {
+  padding: 28px;
+  border: 1px solid #dce5f0;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.task-card + .task-card {
+  margin-top: 24px;
+}
+
+.task-card h3 {
+  margin: 0 0 18px;
+  color: #2160ff;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.task-card h4 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.task-card > p {
+  margin: 0 0 22px;
+  color: #38536f;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Task footer */
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  padding-top: 18px;
+  border-top: 1px solid #dce5f0;
+  color: #71869f;
+  font-size: 14px;
+}
+
+/* Status symbols */
+.task-status {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 23px;
+  height: 23px;
+  flex-shrink: 0;
+  border: 3px solid #2160ff;
+  border-radius: 50%;
+}
+
+.task-status.pending {
+  border-style: dashed;
+}
+
+.task-status.completed {
+  border-style: solid;
+  color: #2160ff;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
+/* Caption below the board */
+.board-caption {
+  margin: 12px 0 0;
+  color: #71869f;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  line-height: 1.6;
+  white-space: nowrap;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .sprint-board {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 20px;
+  }
+
+  .board-column {
+    padding: 22px;
+  }
+
+  .task-card {
+    padding: 22px;
+  }
+
+  .task-card h4 {
+    font-size: 23px;
+  }
+
+  .task-card > p {
+    font-size: 17px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sprint-board {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 24px 0;
+  }
+
+  .board-column {
+    padding: 20px;
+  }
+
+  .board-heading h2 {
+    font-size: 24px;
+  }
+
+  .task-card {
+    padding: 22px;
+  }
+
+  .task-card h4 {
+    font-size: 22px;
+  }
+
+  .task-card > p {
+    font-size: 16px;
+  }
+
+  .task-footer {
+    font-size: 14px;
+  }
+
+  .board-caption {
+    font-size: 14px;
+  }
+}
+
+/* Team roles section */
+.team-roles {
+  width: 100%;
+  padding: 40px 1.3%;
+  background-color: #ffffff;
+  color: #142d47;
+  font-family: Arial, sans-serif;
+}
+
+/* Main heading */
+.team-roles-title {
+  margin: 0 0 38px;
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+/* Three columns */
+.team-roles-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 48px;
+}
+
+/* Individual role */
+.team-role {
+  min-width: 0;
+  padding-top: 34px;
+  border-top: 2px solid #e0e8f1;
+}
+
+.team-role h3 {
+  margin: 0 0 20px;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.team-role p {
+  margin: 0;
+  color: #38536f;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.6;
+}
+
+/* Tablet */
+@media (max-width: 1000px) {
+  .team-roles {
+    padding: 36px 3%;
+  }
+
+  .team-roles-title {
+    margin-bottom: 32px;
+    font-size: 40px;
+  }
+
+  .team-roles-grid {
+    gap: 28px;
+  }
+
+  .team-role {
+    padding-top: 26px;
+  }
+
+  .team-role h3 {
+    margin-bottom: 18px;
+    font-size: 27px;
+  }
+
+  .team-role p {
+    font-size: 18px;
+    line-height: 1.6;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  .team-roles {
+    padding: 32px 20px;
+  }
+
+  .team-roles-title {
+    margin-bottom: 28px;
+    font-size: 30px;
+    line-height: 1.25;
+  }
+
+  .team-roles-grid {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+
+  .team-role {
+    padding-top: 22px;
+  }
+
+  .team-role h3 {
+    margin-bottom: 14px;
+    font-size: 24px;
+  }
+
+  .team-role p {
+    font-size: 16px;
+    line-height: 1.65;
+  }
+}
+
+/* Final section */
+
+.sprint-retrospective {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 64px;
+  width: 100%;
+  padding: 64px 24px;
+  background-color: #f0f5fc;
+  color: #142d47;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
+}
+
+/* Small blue headings */
+.retrospective-column h3 {
+  margin: 0 0 18px;
+  color: #2160ff;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+/* Main headings */
+.retrospective-column h2 {
+  margin: 0 0 28px;
+  color: #142d47;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+/* Checklist */
+.definition-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.definition-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.checkmark {
+  flex-shrink: 0;
+  color: #2160ff;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.definition-list li p {
+  margin: 0;
+  color: #38536f;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* Right column paragraph */
+.retrospective-text {
+  margin: 0 0 28px;
+  color: #38536f;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Reflection question */
+.reflection-question {
+  margin: 0;
+  color: #2160ff;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+  .sprint-retrospective {
+    gap: 36px;
+    padding: 40px 3%;
+  }
+
+  .retrospective-column h2 {
+    font-size: 28px;
+  }
+
+  .retrospective-text {
+    font-size: 16px;
+  }
+
+  .definition-list li p,
+  .reflection-question {
+    font-size: 15px;
+  }
+}
+
+
+/* Mobile */
+@media (max-width: 600px) {
+  .sprint-retrospective {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 32px 20px;
+  }
+
+  .retrospective-column h3 {
+    margin-bottom: 16px;
+    font-size: 12px;
+  }
+
+  .retrospective-column h2 {
+    margin-bottom: 20px;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .definition-list {
+    gap: 16px;
+  }
+
+  .definition-list li {
+    gap: 12px;
+  }
+
+  .checkmark {
+    font-size: 20px;
+  }
+
+  .definition-list li p,
+  .retrospective-text,
+  .reflection-question {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .retrospective-text {
+    margin-bottom: 22px;
+  }
+}

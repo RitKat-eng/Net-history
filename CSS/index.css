@@ -1,0 +1,1005 @@
+
+/* Hero section: 1969  */
+
+.description-1969 {
+    max-width: 1328px;
+    margin: 0 auto;
+    padding: 64px 24px;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 48px;
+    align-items: center;
+}
+
+/* Rubrik överst */
+
+.description-1969 h3 {
+    grid-column: 1;
+    margin: 0 0 20px;
+
+    color: #1769ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+/* Huvudrubrik */
+
+.description-1969 h1 {
+    grid-column: 1;
+    margin: 0 0 22px;
+
+    color: #142d49;
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 1.17;
+}
+
+/* Beskrivande text */
+
+.description-1969 > p {
+    grid-column: 1;
+    margin: 0 0 24px;
+
+    color: #385575;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Knappar och lästid */
+
+.action-1969 {
+    grid-column: 1;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+/* Download-knapp */
+
+.hero-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px;
+
+    padding: 14px 18px;
+    background-color: #1760f5;
+    color: #ffffff;
+
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-radius: 5px;
+    transition: background-color 0.2s ease;
+}
+
+.hero-button:hover {
+    background-color: #0d4bd0;
+}
+
+.hero-button:focus-visible {
+    outline: 2px solid #142d49;
+    outline-offset: 4px;
+}
+
+/* Pil i knappen */
+
+.hero-button-arrow {
+    font-size: 20px;
+    line-height: 1;
+}
+
+/* Läsningstid */
+
+.action-1969 h7 {
+    color: #657c98;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+/* Historisk bild */
+
+.img-1969 {
+    grid-column: 2;
+    grid-row: 1 / span 4;
+    align-self: center;
+
+    width: 100%;
+    position: relative;
+}
+
+.img-1969 img {
+    display: block;
+    width: 100%;
+    height: 355px;
+
+    object-fit: cover;
+    object-position: center;
+
+    border-radius: 5px;
+}
+
+/*Internet information*/
+.internet-information {
+    width: 100%;
+    padding: 24px max(32px, calc((100% - 1328px) / 2));
+    background-color: #f0f5fc;
+    color: #173451;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    column-gap: 14px;
+    align-items: start;
+}
+
+.internet-info-icon {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    color: #1769ff;
+    font-size: 22px;
+    line-height: 1.2;
+}
+
+.internet-information p {
+    grid-column: 2;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+.internet-information p:first-of-type {
+    margin-bottom: 4px;
+    font-size: 15px;
+    font-weight: 500;
+}
+/* Tablet*/
+
+@media (max-width: 900px) {
+    .description-1969 {
+        column-gap: 28px;
+        padding: 45px 24px;
+    }
+
+    .description-1969 h1 {
+        font-size: 42px;
+    }
+
+    .img-1969 img {
+        height: 300px;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 600px) {
+    .description-1969 {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 18px;
+
+        padding: 35px 20px;
+    }
+
+    .description-1969 h3 {
+        margin-bottom: 0;
+    }
+
+    .description-1969 h1 {
+        font-size: 36px;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    .description-1969 > p {
+        font-size: 16px;
+        margin-bottom: 0;
+    }
+
+    .action-1969 {
+        gap: 12px;
+    }
+
+    .hero-button {
+        padding: 13px 15px;
+    }
+
+    .img-1969 {
+        width: 100%;
+    }
+
+    .img-1969 img {
+        height: 250px;
+    }
+
+    .internet-information {
+        padding: 20px;
+        column-gap: 10px;
+    }
+}
+
+/*Nätets milstolpar*/
+
+.nätets-milstolpar {
+     width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 64px max(24px, calc((100% - 1328px) / 2));
+    background-color: #ffffff;
+}
+
+/* Övre rubriker */
+
+.milstolpar-top h3 {
+    margin: 0 0 12px;
+    color: #1760ff;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.milstolpar-top h2 {
+    margin: 0 0 12px;
+    color: #142d49;
+    font-size: 34px;
+    font-weight: 400;
+    line-height: 1.3;
+}
+
+.milstolpar-top p {
+    margin: 0;
+    color: #385575;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+/* Tidslinje */
+
+.milestone-timeline {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 38px;
+}
+
+/* Horisontell linje */
+
+.milestone-timeline::before {
+    content: "";
+    position: absolute;
+    top: 52px;
+    left: 4px;
+    right: 4px;
+    height: 1px;
+    background-color: #d9e3f0;
+}
+
+/* Varje milstolpe */
+
+.milestone {
+    min-width: 0;
+    position: relative;
+}
+
+.milestone h3 {
+    margin: 0 0 17px;
+    color: #1760ff;
+    font-size: 26px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Blå punkt */
+
+.milestone-dot {
+    position: relative;
+    z-index: 1;
+    width: 9px;
+    height: 9px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+    background-color: #1760ff;
+}
+
+/* Rubrik och text */
+
+.milestone h4 {
+    margin: 0 0 10px;
+    color: #142d49;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.milestone p {
+    margin: 0;
+    color: #385575;
+    font-size: 13px;
+    line-height: 1.65;
+    overflow-wrap: break-word;
+}
+
+/*Tablet*/
+
+@media (max-width: 900px) {
+    .nätets-milstolpar {
+        padding: 48px 32px;
+    }
+
+    .milestone-timeline {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        row-gap: 36px;
+    }
+
+    .milestone-timeline::before {
+        display: none;
+    }
+}
+
+/*Mobil*/
+
+@media (max-width: 600px) {
+    .nätets-milstolpar {
+        padding: 36px 20px;
+    }
+
+    .milstolpar-top h2 {
+        font-size: 28px;
+    }
+
+    .milestone-timeline {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 30px 20px;
+        margin-top: 30px;
+    }
+
+    .milestone h3 {
+        font-size: 23px;
+    }
+
+    .milestone h4 {
+        font-size: 14px;
+    }
+}
+
+/**/
+
+/* Utforska vidare*/
+
+.perspektiv-section {
+    width: 100%;
+    background-color: #f1f5fb;
+    padding: 64px 24px;
+    box-sizing: border-box;
+}
+
+
+/* Sektionens innehåll */
+
+.perspektiv-container {
+    width: 100%;
+    max-width: 1328px;
+    margin: 0 auto;
+}
+
+
+/* Rubrik och introduktion */
+
+.perspektiv-top h3 {
+    margin: 0 0 12px;
+    color: #1769ff;
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.perspektiv-top h2 {
+    margin: 0 0 12px;
+    color: #17324d;
+    font-size: 34px;
+    font-weight: 400;
+}
+
+.perspektiv-top p {
+    margin: 0 0 32px;
+    color: #385573;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+/* De tre korten */
+
+.perspektiv-cards {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 22px;
+}
+
+
+/* Varje enskilt kort */
+
+.perspektiv-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    min-height: 270px;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px solid #dce4ef;
+    border-radius: 5px;
+}
+
+
+/* Ikon och kategori */
+
+.perspektiv-card-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-bottom: 18px;
+}
+
+.perspektiv-icon {
+    width: 44px;
+    height: 44px;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+
+.perspektiv-category {
+    color: #607894;
+    font-size: 10px;
+    font-weight: 700;
+    text-align: right;
+}
+
+
+/* Kortets rubrik */
+
+.perspektiv-card h3 {
+    margin: 0 0 10px;
+    color: #17324d;
+    font-size: 21px;
+    font-weight: 400;
+}
+
+
+/* Kortets beskrivning */
+
+.perspektiv-card p {
+    margin: 0 0 24px;
+    color: #385573;
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+/* Länk längst ned i kortet */
+
+.perspektiv-card-link {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    margin-top: auto;
+    color: #1769ff;
+    font-size: 13px;
+}
+
+
+/* Endast den blå texten är klickbar */
+
+.perspektiv-card-link a {
+    color: #1769ff;
+    text-decoration: none;
+}
+
+.perspektiv-card-link a:hover {
+    text-decoration: underline;
+}
+
+.perspektiv-card-link a:focus-visible {
+    outline: 2px solid #1769ff;
+    outline-offset: 4px;
+}
+
+
+/* Tablet */
+
+@media (max-width: 900px) {
+    .perspektiv-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+
+/* Mobil */
+
+@media (max-width: 600px) {
+    .perspektiv-section {
+        padding: 44px 20px;
+    }
+
+    .perspektiv-top h2 {
+        font-size: 28px;
+    }
+
+    .perspektiv-cards {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .perspektiv-card {
+        min-height: 250px;
+    }
+}
+
+/*Titta och förstå */
+
+.history-explained {
+    background-color: #ffffff;
+    color: #102943;
+    padding: 64px 24px;
+    width: 100%;
+}
+
+/* Section heading */
+
+.history-explained-header {
+    margin-bottom: 32px;
+}
+
+.history-explained-header h3 {
+    color: #1760ff;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 16px;
+}
+
+.history-explained-header h2 {
+    color: #102943;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0;
+}
+
+/* Main layout */
+
+.history-explained-content {
+    display: grid;
+    grid-template-columns: 1.8fr 1fr;
+    gap: 58px;
+    align-items: center;
+}
+
+/* YouTube video */
+
+.history-video-column {
+    min-width: 0;
+}
+
+.history-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    padding: 0;
+    min-height: 0;
+    overflow: hidden;
+    border-radius: 6px;
+    background-color: #0c2139;
+}
+
+.history-video iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Caption under video */
+
+.video-caption {
+    color: #71839b;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 12px 0 0;
+}
+
+/* Description beside video */
+
+.history-video-description {
+    min-width: 0;
+}
+
+.history-video-description h2 {
+    color: #102943;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 22px;
+}
+
+.history-video-description > p {
+    color: #38516d;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 0 0 22px;
+}
+
+/* Checklist */
+
+.history-video-points {
+    list-style: none;
+    padding: 0;
+    margin: 0 0 22px;
+}
+
+.history-video-points li {
+    position: relative;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    color: #38516d;
+    font-size: 15px;
+    line-height: 1.5;
+}
+
+.history-video-points li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    top: 0;
+    color: #1760ff;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* Summary text */
+
+.history-video-description .history-video-summary {
+    color: #1760ff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.6;
+    margin: 0;
+}
+
+/*Tablet */
+
+@media (max-width: 900px) {
+    .history-explained {
+        padding: 48px 5%;
+    }
+
+    .history-explained-content {
+        grid-template-columns: 1fr;
+        gap: 30px;
+    }
+
+    .history-explained-header h2 {
+        font-size: 32px;
+    }
+
+    .history-video-description h2 {
+        font-size: 28px;
+    }
+}
+
+/*Mobile*/
+
+@media (max-width: 600px) {
+    .history-explained {
+        padding: 36px 20px;
+    }
+
+    .history-explained-header {
+        margin-bottom: 24px;
+    }
+
+    .history-explained-header h3 {
+        font-size: 12px;
+    }
+
+    .history-explained-header h2 {
+        font-size: 28px;
+    }
+
+    .history-explained-content {
+        gap: 24px;
+    }
+
+    .history-video {
+        border-radius: 5px;
+    }
+
+    .history-video-description h2 {
+        font-size: 25px;
+        margin-bottom: 16px;
+    }
+
+    .history-video-description > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .history-video-points li {
+        font-size: 14px;
+        margin-bottom: 16px;
+    }
+
+    .history-video-description .history-video-summary {
+        font-size: 13px;
+    }
+}
+
+/*Section 4: Hjälp oss bli bättre*/
+
+.feedback-section {
+    background-color: #f1f6fc;
+    color: #102943;
+    padding: 64px 24px;
+}
+
+.feedback-container {
+    max-width: 1328px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 0.8fr 1.2fr;
+    gap: 100px;
+    align-items: start;
+}
+
+/* Left column */
+
+.feedback-intro h3 {
+    color: #1760ff;
+    font-size: 13px;
+    font-weight: 700;
+    margin: 0 0 22px;
+}
+
+.feedback-intro h2 {
+    color: #102943;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1.2;
+    margin: 0 0 22px;
+}
+
+.feedback-description {
+    color: #38516d;
+    font-size: 17px;
+    line-height: 1.7;
+    margin: 0 0 20px;
+}
+
+.feedback-hint {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.feedback-hint-icon {
+    color: #1760ff;
+    font-size: 25px;
+    line-height: 1;
+}
+
+.feedback-hint p {
+    color: #38516d;
+    font-size: 14px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* Right column */
+
+.feedback-form-container {
+    min-width: 0;
+}
+
+.feedback-required-note {
+    color: #71839b;
+    font-size: 12px;
+    margin: 2px 0 22px;
+}
+
+.feedback-form {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.feedback-fields-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+}
+
+/* Form fields */
+
+.feedback-field {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 0;
+}
+
+.feedback-field label {
+    color: #102943;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.feedback-field input,
+.feedback-field textarea {
+    width: 100%;
+    box-sizing: border-box;
+    border: 1px solid #d7e1ed;
+    border-radius: 6px;
+    background-color: #ffffff;
+    color: #102943;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+    transition: border-color 0.2s ease,
+                box-shadow 0.2s ease;
+}
+
+.feedback-field input {
+    height: 51px;
+    padding: 0 14px;
+}
+
+.feedback-field textarea {
+    min-height: 123px;
+    padding: 16px 14px;
+    resize: vertical;
+    line-height: 1.6;
+}
+
+.feedback-field input::placeholder,
+.feedback-field textarea::placeholder {
+    color: #71839b;
+    opacity: 1;
+}
+
+.feedback-field input:focus,
+.feedback-field textarea:focus {
+    border-color: #1760ff;
+    box-shadow: 0 0 0 3px rgba(23, 96, 255, 0.12);
+}
+
+/* Consent checkbox */
+
+.feedback-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.feedback-consent input {
+    width: 19px;
+    height: 19px;
+    flex-shrink: 0;
+    margin: 0;
+    accent-color: #1760ff;
+    cursor: pointer;
+}
+
+.feedback-consent label {
+    color: #38516d;
+    font-size: 12px;
+    line-height: 1.6;
+    cursor: pointer;
+}
+
+/* Submit button */
+
+.feedback-submit-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    align-self: flex-start;
+    min-height: 51px;
+    padding: 0 21px;
+    border: none;
+    border-radius: 7px;
+    background-color: #1760f5;
+    color: #ffffff;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.feedback-submit-button:hover {
+    background-color: #0e4ed1;
+}
+
+.feedback-submit-button span:last-child {
+    font-size: 19px;
+}
+
+.feedback-form-note {
+    color: #71839b;
+    font-size: 12px;
+    line-height: 1.6;
+    margin: 22px 0 0;
+}
+
+/*Tablet*/
+
+@media (max-width: 900px) {
+    .feedback-section {
+        padding: 48px 5%;
+    }
+
+    .feedback-container {
+        grid-template-columns: 1fr;
+        gap: 36px;
+    }
+
+    .feedback-intro h2 {
+        max-width: 500px;
+        font-size: 32px;
+    }
+
+    .feedback-description {
+        max-width: 550px;
+    }
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+    .feedback-section {
+        padding: 36px 20px 48px;
+    }
+
+    .feedback-container {
+        gap: 30px;
+    }
+
+    .feedback-intro h3 {
+        font-size: 12px;
+    }
+
+    .feedback-intro h2 {
+        font-size: 29px;
+    }
+
+    .feedback-description {
+        font-size: 15px;
+    }
+
+    .feedback-fields-row {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .feedback-form {
+        gap: 20px;
+    }
+
+    .feedback-field input {
+        height: 49px;
+    }
+
+    .feedback-field textarea {
+        min-height: 140px;
+    }
+
+    .feedback-submit-button {
+        width: 100%;
+        min-height: 50px;
+    }
+}
+
+
